@@ -16,9 +16,19 @@ public class Fraction
         this.denominateur = b;
     }
 
+    public int getDenominateur() 
+    {
+        return denominateur;
+    }
+    public int getNumerateur() 
+    
+    {
+        return numerateur;
+    }
     @Override
     public String toString()
     {
-        return numerateur + " / " + denominateur;
+        String s = numerateur + " / " + denominateur;
+        return s;
     }
 }
