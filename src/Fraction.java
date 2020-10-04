@@ -3,7 +3,7 @@ public class Fraction
     // Variable d'instances //
     private int numerateur;
     private int denominateur;
-
+  
     public Fraction()
     {
         this.numerateur = 1;
@@ -14,6 +14,10 @@ public class Fraction
     {
         this.numerateur = a;
         this.denominateur = b;
+
+        // Assertions //
+        assert numerateur < 0 : "Cas erreur : le numérateur est négatif";
+		assert denominateur < 0 : "Cas erreur : le dénominateur est négatif";
     }
 
     public int getDenominateur() 
